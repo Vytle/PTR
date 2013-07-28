@@ -1,4 +1,4 @@
-## Interface: 50300
+## Interface: 50400
 ## X-Compatible-With: 50001
 ## Title: Plate Buffs - MoP
 ## Version: 1.12.7
@@ -6,7 +6,6 @@
 ## Author: Cyprias
 ## SavedVariables: PB_DB
 ## OptionalDeps: LibStub, CallbackHandler-1.0, Ace3, LibNameplate-1.0
-
 ## LoadManagers: AddonLoader
 ## X-LoadOn-Always: true
 
