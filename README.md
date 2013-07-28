@@ -1,6 +1,6 @@
-Vytle UI
+Vytle UI PTR
 ==
 
-Vytle UI version 2.0
+Vytle UI PTR version 2.1
 
 1920 x 1080 resolution
