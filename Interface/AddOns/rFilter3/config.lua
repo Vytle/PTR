@@ -12,7 +12,7 @@
 -- // Focus
 -- // 7 = { a1 = "CENTER", a2 = "CENTER", af = "UIParent", x = -100, y = 138 },
 -- // Pet
--- // 8
+-- // 8 
 
 --get the addon namespace
 local addon, ns = ...
@@ -22,10 +22,6 @@ ns.cfg = cfg
 cfg.rf3_BuffList, cfg.rf3_DebuffList, cfg.rf3_CooldownList = {}, {}, {}
 
 local _, player_class = UnitClass("player")
-
------------------------------
--- DEFAULT CONFIG
------------------------------
 
 cfg.highlightPlayerSpells 	= false  --player spells will have a blue border
 cfg.updatetime           	= 0.3   --how fast should the timer update itself
@@ -1221,6 +1217,52 @@ cfg.rf3_BuffList = {
 	  },
 	},
   },
+  -- Alacrity (Darkmist Vortex)
+  [3] = {
+	spellid = 126657,
+	size = 26,
+	-- aura 1
+	pos = { a1 = "CENTER", a2 = "CENTER", af = "UIParent", x = -100, y = 0 },
+	unit = "player",
+	validate_unit   = true,
+	ismine          = true,
+	desaturate      = false,
+	move_ingame     = true,
+	hide_ooc        = false,
+	alpha = {
+	  found = {
+		frame = 1,
+		icon = 1,
+	  },
+	  not_found = {
+		frame = 0,
+		icon = 0,
+	  },
+	},
+  },
+  -- Unwavering Might (Lei Shen's Final Orders)
+  [4] = {
+	spellid = 126582,
+	size = 26,
+	-- aura 1
+	pos = { a1 = "CENTER", a2 = "CENTER", af = "UIParent", x = -50, y = 0 },
+	unit = "player",
+	validate_unit   = true,
+	ismine          = true,
+	desaturate      = false,
+	move_ingame     = true,
+	hide_ooc        = false,
+	alpha = {
+	  found = {
+		frame = 1,
+		icon = 1,
+	  },
+	  not_found = {
+		frame = 0,
+		icon = 0,
+	  },
+	},
+  },
 }
 -- default paladin debuffs
 cfg.rf3_DebuffList = {}
@@ -1520,6 +1562,52 @@ cfg.rf3_DebuffList = {
 	  },
 	},
   },
+  -- Hemorrhage (Subtlety)
+  [2] = {
+	spellid = 16511,
+	size = 26,
+	-- aura 5
+	pos = { a1 = "CENTER", a2 = "CENTER", af = "UIParent", x = -96.4, y = -264 },
+	unit = "target",
+	validate_unit   = true,
+	ismine          = true,
+	desaturate      = false,
+	move_ingame     = true,
+	hide_ooc        = false,
+	alpha = {
+	  found = {
+		frame = 1,
+		icon = 1,
+	  },
+	  not_found = {
+		frame = 0,
+		icon = 0,
+	  },
+	},
+  },
+  -- Find Weakness (Subtlety)
+  [3] = {
+	spellid = 91023,
+	size = 26,
+	-- aura 5
+	pos = { a1 = "CENTER", a2 = "CENTER", af = "UIParent", x = -138.8, y = -264 },
+	unit = "target",
+	validate_unit   = true,
+	ismine          = true,
+	desaturate      = false,
+	move_ingame     = true,
+	hide_ooc        = false,
+	alpha = {
+	  found = {
+		frame = 1,
+		icon = 1,
+	  },
+	  not_found = {
+		frame = 0,
+		icon = 0,
+	  },
+	},
+  },
 }
 end
 
@@ -1799,8 +1887,8 @@ cfg.rf3_BuffList = {
   [5] = {
 	spellid = 17941,
 	size = 26,
-	-- aura 1
-	pos = { a1 = "CENTER", a2 = "CENTER", af = "UIParent", x = -266, y = -264 },
+	-- aura 2
+	pos = { a1 = "CENTER", a2 = "CENTER", af = "UIParent", x = -223.6, y = -264 },
 	unit = "player",
 	validate_unit   = true,
 	ismine          = true,
@@ -1870,6 +1958,29 @@ cfg.rf3_BuffList = {
 	size = 26,
 	-- aura 1
 	pos = { a1 = "CENTER", a2 = "CENTER", af = "UIParent", x = -50, y = 0 },
+	unit = "player",
+	validate_unit   = true,
+	ismine          = true,
+	desaturate      = false,
+	move_ingame     = true,
+	hide_ooc        = false,
+	alpha = {
+	  found = {
+		frame = 1,
+		icon = 1,
+	  },
+	  not_found = {
+		frame = 0,
+		icon = 0,
+	  },
+	},
+  },
+   -- Molten Core
+  [9] = {
+	spellid = 122351,
+	size = 26,
+	-- aura 2
+	pos = { a1 = "CENTER", a2 = "CENTER", af = "UIParent", x = -223.6, y = -264 },
 	unit = "player",
 	validate_unit   = true,
 	ismine          = true,
@@ -2038,6 +2149,52 @@ cfg.rf3_DebuffList = {
 	unit = "target",
 	validate_unit   = true,
 	ismine          = false,
+	desaturate      = false,
+	move_ingame     = true,
+	hide_ooc        = false,
+	alpha = {
+	  found = {
+		frame = 1,
+		icon = 1,
+	  },
+	  not_found = {
+		frame = 0,
+		icon = 0,
+	  },
+	},
+  },
+   -- Metamorphosis: Doom
+  [8] = {
+	spellid = 603,
+	size = 26,
+	-- aura 6
+	pos = { a1 = "CENTER", a2 = "CENTER", af = "UIParent", x = -54, y = -264 },
+	unit = "target",
+	validate_unit   = true,
+	ismine          = true,
+	desaturate      = false,
+	move_ingame     = true,
+	hide_ooc        = false,
+	alpha = {
+	  found = {
+		frame = 1,
+		icon = 1,
+	  },
+	  not_found = {
+		frame = 0,
+		icon = 0,
+	  },
+	},
+  },
+   -- Hand of Gul'dan
+  [9] = {
+	spellid = 47960,
+	size = 26,
+	-- aura 4
+	pos = { a1 = "CENTER", a2 = "CENTER", af = "UIParent", x = -138.8, y = -264 },
+	unit = "target",
+	validate_unit   = true,
+	ismine          = true,
 	desaturate      = false,
 	move_ingame     = true,
 	hide_ooc        = false,
